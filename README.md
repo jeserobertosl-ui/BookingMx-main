@@ -19,4 +19,4 @@ npm run serve
 
 The main problem was with the update function, I didn't realize that I was making the necessary changes after calling the Test, so the test was evaluating the wrong data
 
-While doing testing on frontend, encountered issues getting node to run, had to use {} and export all of the declarations/definitons marked with extern, add transform: {} to the jest.config.js, did testing for validateGraphData, buildGraph and getNearbyCities
+While doing testing on frontend, encountered issues getting node to run, had to use transform: {} on the jest.config.js file. Exported all of the declarations/definitons marked with extern, add transform: {} to the jest.config.js, did testing for validateGraphData, buildGraph and getNearbyCities

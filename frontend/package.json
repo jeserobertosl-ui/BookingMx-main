@@ -1,6 +1,7 @@
 {
   "name": "bookingmx-frontend",
   "version": "1.0.0",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "serve": "npx http-server -c-1 -p 5173 .",

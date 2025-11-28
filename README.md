@@ -20,10 +20,7 @@ npm run serve
 
 The main problem was with the update function, I didn't realize that I was making the necessary changes after calling the Test, so the test was evaluating the wrong data
 
-<<<<<<< Updated upstream
 While doing testing on frontend, encountered issues getting node to run. Exported all of the declarations/definitons marked with extern by declaring "import {func1, func2, ... } from ...", add transform: {} to the jest.config.js, did testing for validateGraphData, buildGraph and getNearbyCities
-=======
-While doing testing on frontend, encountered issues getting node to run, had to use {} and export all of the declarations/definitons marked with extern, add transform: {} to the jest.config.js, did testing for validateGraphData, buildGraph and getNearbyCities
 
 Purpose & functionalities
 The project is about reservations for a hotel, it can add a reservation consisting of a guest name, hotel name, check in date and check out date, it also allows to find nearby cities, it has cities in the state of Jalisco

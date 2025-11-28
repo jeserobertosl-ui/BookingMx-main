@@ -17,7 +17,7 @@ class ReservationServiceTest {
     private final String name = "Juan";
     private final String hotel = "Playa";
     private final LocalDate check_in = LocalDate.now();
-    private final LocalDate check_out = LocalDate.of(2025, 11, 25);
+    private final LocalDate check_out = LocalDate.now().plusDays(2);
 
     private Reservation get_sample_reservation(){
         Reservation reservation = new Reservation();

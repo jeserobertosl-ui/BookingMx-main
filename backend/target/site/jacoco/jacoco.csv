@@ -3,7 +3,7 @@ BookingMx Backend,com.bookingmx.reservations.repo,ReservationRepository,0,52,0,2
 BookingMx Backend,com.bookingmx.reservations.controller,ReservationController,53,0,0,0,11,0,6,0,6,0
 BookingMx Backend,com.bookingmx.reservations.dto,ReservationRequest,0,31,0,0,0,9,0,9,0,9
 BookingMx Backend,com.bookingmx.reservations.dto,ReservationResponse,39,0,0,0,10,0,7,0,7,0
-BookingMx Backend,com.bookingmx.reservations.model,ReservationStatus,0,15,0,0,0,2,0,1,0,1
+BookingMx Backend,com.bookingmx.reservations.model,ReservationStatus,0,24,0,0,0,2,0,1,0,1
 BookingMx Backend,com.bookingmx.reservations.model,Reservation,26,82,1,5,6,22,7,13,6,11
 BookingMx Backend,com.bookingmx.reservations.exception,NotFoundException,0,4,0,0,0,1,0,1,0,1
 BookingMx Backend,com.bookingmx.reservations.exception,ApiExceptionHandler,39,0,0,0,5,0,5,0,5,0

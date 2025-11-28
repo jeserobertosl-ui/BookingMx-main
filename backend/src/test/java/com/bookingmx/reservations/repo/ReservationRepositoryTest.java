@@ -12,14 +12,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ReservationRepositoryTest {
 
+    private final String NAME = "Juan";
+    private final String HOTEL = "Playa";
+    private final LocalDate CHECK_IN = LocalDate.now();
+    private final LocalDate CHECK_OUT = LocalDate.now().plusDays(2);
+
     @Test
     void findAll(){
         Reservation reservation = new Reservation(
             1L,
-                "Juan",
-                "Playa",
-                LocalDate.now(),
-                LocalDate.of(2025, 11, 25)
+                NAME,
+                HOTEL,
+                CHECK_IN,
+                CHECK_OUT
         );
         ReservationRepository res_rep = new ReservationRepository();
         res_rep.save(reservation);
@@ -33,10 +38,10 @@ class ReservationRepositoryTest {
     void findById() {
         Reservation reservation = new Reservation(
                 1L,
-                "Juan",
-                "Playa",
-                LocalDate.now(),
-                LocalDate.of(2025, 11, 25)
+                NAME,
+                HOTEL,
+                CHECK_IN,
+                CHECK_OUT
         );
         ReservationRepository res_rep = new ReservationRepository();
         res_rep.save(reservation);
@@ -50,18 +55,18 @@ class ReservationRepositoryTest {
     void save() {
         Reservation reservation = new Reservation(
                 1L,
-                "Juan",
-                "Playa",
-                LocalDate.now(),
-                LocalDate.of(2025, 11, 25)
+                NAME,
+                HOTEL,
+                CHECK_IN,
+                CHECK_OUT
         );
 
         Reservation reservation2 = new Reservation();
 
         reservation2.setGuestName("Paco");
         reservation2.setHotelName("Riu");
-        reservation2.setCheckIn(LocalDate.now());
-        reservation2.setCheckOut(LocalDate.of(2025, 11, 25));
+        reservation2.setCheckIn(CHECK_IN);
+        reservation2.setCheckOut(CHECK_OUT);
 
         ReservationRepository res_rep = new ReservationRepository();
 
@@ -74,18 +79,18 @@ class ReservationRepositoryTest {
     void delete() {
         Reservation reservation = new Reservation(
                 1L,
-                "Juan",
-                "Playa",
-                LocalDate.now(),
-                LocalDate.of(2025, 11, 25)
+                NAME,
+                HOTEL,
+                CHECK_IN,
+                CHECK_OUT
         );
 
         Reservation reservation2 = new Reservation(
                 2L,
                 "Paco",
                 "Riu",
-                LocalDate.now(),
-                LocalDate.of(2025, 11, 25)
+                CHECK_IN,
+                CHECK_OUT
         );
 
         List<Reservation> res_list = new ArrayList<>();
